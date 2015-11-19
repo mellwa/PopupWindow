@@ -49,7 +49,6 @@ function destroyClickedElement(event)
 function loadFileAsText()
 {
     var fileToLoad = document.getElementById("fileToLoad").files[0];
-
     var fileReader = new FileReader();
     fileReader.onload = function(fileLoadedEvent)
     {

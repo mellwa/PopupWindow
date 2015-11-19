@@ -70,7 +70,8 @@ fieldset {
  */
 
 textarea {
-    resize: none;
+    resize: vertical;
+    white-space: nowrap;
     padding: 0;
     margin: 0;
     border: 0;
@@ -91,9 +92,10 @@ textarea {
    Author's custom styles
    ========================================================================== */
 
-#dialog {
-    padding: 0;
-    margin: 0;
+#inputTextToSave {
+    height: 85vh;
+    padding: 0px;
+    font-family: monospace;
 }
 
 div.numberedtextarea-wrapper { position: relative; }
@@ -115,23 +117,46 @@ div.numberedtextarea-line-numbers {
     left: 0;
     right: 0;
     bottom: 0;
-    width: 30px;
+    width: 3.6vw;
     border-right: 1px solid black;
     color: rgba(0, 0, 0, 0.15);
     overflow: hidden;
+    padding-left: 1px;
+    background-color: darkblue;
 }
 div.numberedtextarea-number {
     padding-right: 6px;
     text-align: right;
-    color: black;
+    color: white;
 }
 
+.modal-dialog{
+    width: 80vw;
+    padding: 0px;
+    margin: 0px;
+}
 
+.modal-body{
+    padding: 0px;
+}
 
+.modal-header{
+    background-color: darkblue;
+    margin: 0px;
+}
 
+.modal-title{
+    color: whitesmoke;
+}
 
+#saveButton, #downloadButton{
+    width: auto;
+    height: auto;
+}
 
-
+#closeButton{
+    color: ghostwhite;
+}
 
 
 
